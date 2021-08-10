@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsapp.View_Controller.MainMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-1.0" layoutY="-2.0" prefHeight="400.0" prefWidth="600.0" spacing="15.0">
+         <children>
+            <Label fx:id="homePageTxt" text="Home Page">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="mMessageLbl" text="No upcoming meetings" />
+            <Button fx:id="calBtn" mnemonicParsing="false" onAction="#OnActionCal" prefWidth="131.0" text="View Calendar" />
+            <Button fx:id="custDataBtn" mnemonicParsing="false" onAction="#onActionCustData" prefWidth="131.0" text="View Customer Data" />
+            <Button fx:id="contactDataBtn" layoutX="245.0" layoutY="215.0" mnemonicParsing="false" onAction="#onActionContactData" prefWidth="131.0" text="View Contact Data" />
+            <Button mnemonicParsing="false" onAction="#onActionReports" prefWidth="131.0" text="Access Reports" />
+            <Button fx:id="signOutTxt" mnemonicParsing="false" onAction="#onActionSignOut" prefWidth="131.0" text="Sign out" />
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

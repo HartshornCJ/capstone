@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsapp.View_Controller.ViewCustomerController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="404.0" prefWidth="351.0" spacing="20.0">
+         <children>
+            <Label text="Customer Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="optionLbl" text="Label" />
+            <GridPane fx:id="customerTwoTF">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.20001220703125" minWidth="10.0" prefWidth="146.79998779296875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="447.0" minWidth="0.0" prefWidth="174.20001220703125" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label fx:id="idTxt" text="ID" />
+                  <Label fx:id="nameTxt" text="Name" GridPane.rowIndex="1" />
+                  <Label fx:id="addressTxt" text="Address" GridPane.rowIndex="2" />
+                  <Label fx:id="addressTwoTxt" text="Address2" GridPane.rowIndex="3" />
+                  <Label fx:id="cityTxt" text="City" GridPane.rowIndex="4" />
+                  <Label fx:id="countryTxt" text="Country" GridPane.rowIndex="5" />
+                  <Label fx:id="zipTxt" text="Postal Code" GridPane.rowIndex="6" />
+                  <Label fx:id="phoneTxt" text="Phone" GridPane.rowIndex="7" />
+                  <Label fx:id="idLbl" text="Label" GridPane.columnIndex="1" />
+                  <Label fx:id="nameLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="addressrLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="addressTwoLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="cityLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="countryLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="zipLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label fx:id="phoneLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <Label fx:id="activetxt" text="Active" GridPane.rowIndex="8" />
+                  <Label fx:id="activeLbl" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label fx:id="LabelOne" text="Client Type" GridPane.rowIndex="9" />
+                  <Label fx:id="LabelTwo" text="Contact Method" GridPane.rowIndex="10" />
+                  <Label fx:id="oneLbl" layoutX="156.0" layoutY="219.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label fx:id="twoLbl1" layoutX="156.0" layoutY="245.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+               </children>
+            </GridPane>
+            <HBox alignment="CENTER_RIGHT" prefHeight="15.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionBack" text="Back" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

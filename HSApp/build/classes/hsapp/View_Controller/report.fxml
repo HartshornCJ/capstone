@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hsapp.View_Controller.ReportController">
+   <children>
+      <VBox spacing="20.0">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Report Type">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="typeR" mnemonicParsing="false" onAction="#onActionType" text="# of appointments by type by month">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="type" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="consultantR" mnemonicParsing="false" onAction="#onActionConsultant" text="the schedule for each consultant" toggleGroup="$type" />
+                  <RadioButton fx:id="clientR" mnemonicParsing="false" onAction="#onActionClient" text="# of appointments for each client  by month" toggleGroup="$type" />
+               </children>
+            </HBox>
+            <TableView fx:id="outputView" prefHeight="327.0" prefWidth="570.0">
+               <columns>
+                  <TableColumn fx:id="oneCol" prefWidth="90.0" />
+                  <TableColumn fx:id="twoCol" prefWidth="90.0" />
+                  <TableColumn fx:id="threeCol" prefWidth="90.0" />
+                  <TableColumn fx:id="fourCol" prefWidth="90.0" />
+                  <TableColumn fx:id="fiveCol" prefWidth="90.0" />
+                  <TableColumn fx:id="sixCol" prefWidth="90.0" />
+                  <TableColumn fx:id="sevenCol" prefWidth="90.0" />
+                  <TableColumn fx:id="eightCol" prefWidth="90.0" />
+               </columns>
+            </TableView>
+            <HBox alignment="CENTER_RIGHT">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionMain" text="MainMenu" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
